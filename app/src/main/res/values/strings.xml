@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">CalculatorApp</string>
-    <string name="question">Formula here…</string>
+    <string name="question">Enter your formula…</string>
     <string name="answer">= Answer</string>
+    <string name="error">Error</string>
     <string name="button1">1</string>
     <string name="button2">2</string>
     <string name="button3">3</string>
@@ -19,7 +20,8 @@
     <string name="button_mod">%</string>
     <string name="button_plus">+</string>
     <string name="button_minus">-</string>
-    <string name="button_mult">×</string>
+    <string name="button_multiply">×</string>
     <string name="button_div">÷</string>
     <string name="button_ans">Ans</string>
+    <string name="button_backspace">Backspace</string>
 </resources>

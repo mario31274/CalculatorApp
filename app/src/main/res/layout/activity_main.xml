@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/question"
+        android:textColor="@color/black"
         android:textSize="32sp"
         android:textAlignment="viewEnd"
         app:layout_constraintBottom_toTopOf="@+id/textViewAnswer" />
@@ -21,7 +22,9 @@
         android:layout_height="wrap_content"
         android:text="@string/answer"
         android:textSize="32sp"
+        android:textColor="@color/black"
         android:textAlignment="viewEnd"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/line"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -53,26 +56,31 @@
                 android:text="@string/buttonC"
                 android:textSize="32sp"
                 style="@style/operatorButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onClearClick">
             </com.google.android.material.button.MaterialButton>
             <com.google.android.material.button.MaterialButton
+                android:text="@string/button_backspace"
                 android:textAlignment="center"
                 app:icon="@drawable/baseline_backspace_24"
                 app:iconTint="@color/btnBackground2"
                 style="@style/operatorButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onBackspaceClick">
             </com.google.android.material.button.MaterialButton>
             <com.google.android.material.button.MaterialButton
                 android:text="@string/button_mod"
                 android:textSize="32sp"
                 style="@style/operatorButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onOperatorClick">
             </com.google.android.material.button.MaterialButton>
             <com.google.android.material.button.MaterialButton
                 android:text="@string/button_div"
                 android:textSize="32sp"
                 style="@style/operatorButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onOperatorClick">
             </com.google.android.material.button.MaterialButton>
         </LinearLayout>
         <LinearLayout
@@ -84,25 +92,29 @@
                 android:text="@string/button7"
                 android:textSize="32sp"
                 style="@style/digitButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onDigitClick">
             </com.google.android.material.button.MaterialButton>
             <com.google.android.material.button.MaterialButton
                 android:text="@string/button8"
                 android:textSize="32sp"
                 style="@style/digitButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onDigitClick">
             </com.google.android.material.button.MaterialButton>
             <com.google.android.material.button.MaterialButton
                 android:text="@string/button9"
                 android:textSize="32sp"
                 style="@style/digitButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onDigitClick">
             </com.google.android.material.button.MaterialButton>
             <com.google.android.material.button.MaterialButton
-                android:text="@string/button_mult"
+                android:text="@string/button_multiply"
                 android:textSize="32sp"
                 style="@style/operatorButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onOperatorClick">
             </com.google.android.material.button.MaterialButton>
         </LinearLayout>
         <LinearLayout
@@ -114,25 +126,29 @@
                 android:text="@string/button4"
                 android:textSize="32sp"
                 style="@style/digitButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onDigitClick">
             </com.google.android.material.button.MaterialButton>
             <com.google.android.material.button.MaterialButton
                 android:text="@string/button5"
                 android:textSize="32sp"
                 style="@style/digitButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onDigitClick">
             </com.google.android.material.button.MaterialButton>
             <com.google.android.material.button.MaterialButton
                 android:text="@string/button6"
                 android:textSize="32sp"
                 style="@style/digitButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onDigitClick">
             </com.google.android.material.button.MaterialButton>
             <com.google.android.material.button.MaterialButton
                 android:text="@string/button_minus"
                 android:textSize="32sp"
                 style="@style/operatorButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onOperatorClick">
             </com.google.android.material.button.MaterialButton>
         </LinearLayout>
         <LinearLayout
@@ -144,25 +160,29 @@
                 android:text="@string/button1"
                 android:textSize="32sp"
                 style="@style/digitButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onDigitClick">
             </com.google.android.material.button.MaterialButton>
             <com.google.android.material.button.MaterialButton
                 android:text="@string/button2"
                 android:textSize="32sp"
                 style="@style/digitButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onDigitClick">
             </com.google.android.material.button.MaterialButton>
             <com.google.android.material.button.MaterialButton
                 android:text="@string/button3"
                 android:textSize="32sp"
                 style="@style/digitButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onDigitClick">
             </com.google.android.material.button.MaterialButton>
             <com.google.android.material.button.MaterialButton
                 android:text="@string/button_plus"
                 android:textSize="32sp"
                 style="@style/operatorButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onOperatorClick">
             </com.google.android.material.button.MaterialButton>
         </LinearLayout>
         <LinearLayout
@@ -174,25 +194,29 @@
                 android:text="@string/buttonAC"
                 android:textSize="20sp"
                 style="@style/operatorButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onAllClearClick">
             </com.google.android.material.button.MaterialButton>
             <com.google.android.material.button.MaterialButton
                 android:text="@string/button0"
                 android:textSize="32sp"
                 style="@style/digitButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onDigitClick">
             </com.google.android.material.button.MaterialButton>
             <com.google.android.material.button.MaterialButton
                 android:text="@string/button_dot"
                 android:textSize="32sp"
                 style="@style/digitButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onDigitClick">
             </com.google.android.material.button.MaterialButton>
             <com.google.android.material.button.MaterialButton
                 android:text="@string/button_eq"
                 android:textSize="32sp"
                 style="@style/operatorButton"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                android:onClick="onEqualClick">
             </com.google.android.material.button.MaterialButton>
         </LinearLayout>
     </LinearLayout>
