@@ -24,4 +24,16 @@
     <string name="button_div">÷</string>
     <string name="button_ans">Ans</string>
     <string name="button_backspace">Backspace</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_left_parenthesis">(</string>
+    <string name="button_right_parenthesis">)</string>
+    <string name="button_pi">π</string>
+    <string name="button_e">e</string>
+    <string name="button_sin">sin</string>
+    <string name="button_cos">cos</string>
+    <string name="button_tan">tan</string>
+    <string name="button_sqrt">√</string>
+    <string name="button_power">xⁿ</string>
+    <string name="button_log">log<sub>e</sub></string>
 </resources>
