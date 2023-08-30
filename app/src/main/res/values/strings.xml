@@ -36,4 +36,9 @@
     <string name="button_sqrt">√</string>
     <string name="button_power">xⁿ</string>
     <string name="button_log">log<sub>e</sub></string>
+    <string name="button_log10">log<sub>10</sub></string>
+    <string name="button_asin">sin<sup>-1</sup></string>
+    <string name="button_acos">cos<sup>-1</sup></string>
+    <string name="button_atan">tan<sup>-1</sup></string>
+    <string name="button_power_10">10ⁿ</string>
 </resources>

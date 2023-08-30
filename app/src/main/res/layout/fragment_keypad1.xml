@@ -179,9 +179,9 @@
             <com.google.android.material.button.MaterialButton
                 style="@style/operatorButton"
                 android:layout_margin="12dp"
-                android:onClick="onOperatorClick"
-                android:text="@string/button_mod"
-                android:textSize="32sp" />
+                android:onClick="onAnswerClick"
+                android:text="@string/button_ans"
+                android:textSize="14sp" />
 
             <com.google.android.material.button.MaterialButton
                 style="@style/operatorButton"

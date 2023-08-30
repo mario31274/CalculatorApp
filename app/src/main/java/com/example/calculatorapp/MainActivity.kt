@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity() {
         binding.textViewQuestion.text = binding.textViewAnswer.text.toString().drop(1)
     }
     fun onClearClick(view: View) {
-        binding.textViewQuestion.text = ""
+        onAnswerClick(view)
         lastNumeric = false
     }
     fun onOperatorClick(view: View) {
@@ -118,7 +118,6 @@ class MainActivity : AppCompatActivity() {
             val lastChar = binding.textViewQuestion.text.toString().last()
             if(lastChar.isDigit()){
                 lastNumeric = true
-                lastDot = false
                 onEqual()
             } else if(lastChar == '.') {
                 lastDot = true
@@ -160,6 +159,13 @@ class MainActivity : AppCompatActivity() {
                 stateError = true
                 lastNumeric = false
             }
+        }
+    }
+
+    fun onAnswerClick(view: View) {
+        if(!stateError && lastNumeric){
+            binding.textViewQuestion.text = binding.textViewAnswer.text.drop(1)
+            lastDot = true
         }
     }
 
