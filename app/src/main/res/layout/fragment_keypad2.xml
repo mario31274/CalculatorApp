@@ -133,20 +133,23 @@
             <com.google.android.material.button.MaterialButton
                 style="@style/digitButton"
                 android:layout_margin="12dp"
-                android:text=""
-                android:textSize="32sp" />
+                android:onClick="onFunctionClick"
+                android:text="@string/button_asin"
+                android:textSize="10sp" />
 
             <com.google.android.material.button.MaterialButton
                 style="@style/digitButton"
                 android:layout_margin="12dp"
-                android:text=""
-                android:textSize="32sp" />
+                android:onClick="onFunctionClick"
+                android:text="@string/button_acos"
+                android:textSize="9sp" />
 
             <com.google.android.material.button.MaterialButton
                 style="@style/digitButton"
                 android:layout_margin="12dp"
-                android:text=""
-                android:textSize="32sp" />
+                android:onClick="onFunctionClick"
+                android:text="@string/button_atan"
+                android:textSize="9sp" />
 
             <com.google.android.material.button.MaterialButton
                 style="@style/operatorButton"
@@ -165,22 +168,19 @@
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
-                style="@style/digitButton"
+                style="@style/operatorButton"
                 android:layout_margin="12dp"
-                android:text=""
-                android:textSize="32sp" />
-
-            <com.google.android.material.button.MaterialButton
-                style="@style/digitButton"
-                android:layout_margin="12dp"
-                android:text=""
+                android:onClick="onOperatorClick"
+                android:text="@string/button_mod"
                 android:textSize="32sp" />
 
             <com.google.android.material.button.MaterialButton
                 style="@style/operatorButton"
                 android:layout_margin="12dp"
-                android:text=""
-                android:textSize="32sp" />
+                android:onClick="onFunctionClick"
+                android:text="@string/button_log10"
+                android:textAllCaps="false"
+                android:textSize="10sp" />
 
             <com.google.android.material.button.MaterialButton
                 style="@style/operatorButton"
@@ -189,6 +189,14 @@
                 android:text="@string/button_log"
                 android:textAllCaps="false"
                 android:textSize="13sp" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/operatorButton"
+                android:layout_margin="12dp"
+                android:onClick="onFunctionClick"
+                android:text="@string/button_power_10"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>
 </FrameLayout>
